@@ -36,7 +36,7 @@
     }
 
     nav a:hover {
-      color: #ff6f00; /* Change the color on hover */
+      color: #ff6f00;
     }
 
     section {
@@ -55,7 +55,24 @@
     }
 
     .button:hover {
-      background-color: #ff9030; /* Change the button color on hover */
+      background-color: #ff9030;
+    }
+
+    .moving-text {
+      font-size: 24px;
+      animation: moveText 2s linear infinite; /* Specify the animation */
+    }
+
+    @keyframes moveText {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(50px); /* Move the text 50 pixels to the right */
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
 
     footer {
@@ -83,6 +100,7 @@
     <h2>About Us</h2>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel justo vel purus ultricies consequat a vel purus.</p>
     <a href="#" class="button">Learn More</a>
+    <p class="moving-text">This text is moving!</p>
   </section>
 
   <footer>
